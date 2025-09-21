@@ -1,0 +1,10 @@
+package com.klef.fsd.sdp.service;
+
+import com.klef.fsd.sdp.model.Buyer;
+
+public interface BuyerService {
+    public String buyerRegistration(Buyer buyer);
+    public Buyer checkBuyerLogin(String username, String password);
+    public String buyerupdateprofile(Buyer buyer);
+
+}
