@@ -10,7 +10,7 @@ import {
   FaSignOutAlt 
 } from 'react-icons/fa';
 import Contact from './../main/Contact';
-import Menu from './../main/menu';
+import Menu from './../main/Menu';
 import NotFound from './../main/NotFound';
 import BuyerRegistration from './BuyerRegistration';
 import BuyerLogin from './BuyerLogin';
