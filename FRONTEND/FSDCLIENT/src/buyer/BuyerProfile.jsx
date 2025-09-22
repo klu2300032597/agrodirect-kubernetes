@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../buyer/buyercss/buyerProfile.css';
+import './buyercss/BuyerProfile';
 
 export default function BuyerProfile() {
   const [buyer, setBuyer] = useState(null);
