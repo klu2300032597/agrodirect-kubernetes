@@ -18,7 +18,7 @@ import FarmerHome from './FarmerHome';
 import AddProducts from './AddProducts';
 import MyListings from './MyListings';
 import Transactions from './../buyer/Transactions';
-import './farmercss/farmer.css'; 
+import '../farmer/farmercss/farmer.css'; 
 import { useAuth } from '../contextapi/AuthContext';
 import FarmerProfile from './FarmerProfile';
 import logo from '../assets/logo.png';
