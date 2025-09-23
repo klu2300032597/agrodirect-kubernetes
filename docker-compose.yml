@@ -1,7 +1,7 @@
 services:
-  mysqldb:
+  mysqldbs:
     image: mysql:8
-    container_name: mysql-db
+    container_name: mysql-pro
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: agrodbs
@@ -13,21 +13,21 @@ services:
       - springboot-mysql-net
 
   backend:
-    image: rishitha22/docker-backend:latest
+    image: rishitha22/probackend:latest
     container_name: springboot
     ports:
       - "2025:2020"
     depends_on:
-      - mysqldb
+      - mysqldbs
     restart: on-failure
     networks:
       - springboot-mysql-net
 
   frontend:
-    image: rishitha22/docker-frontend:latest
-    container_name: react
+    image: rishitha22/profrontend:latest
+    container_name: reactpro
     ports:
-      - "3000:80"
+      - "3000:85"
     depends_on:
       - backend
     restart: on-failure
