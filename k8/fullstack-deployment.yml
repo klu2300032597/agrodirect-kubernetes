@@ -28,7 +28,7 @@ spec:
             - containerPort: 3306
           env:
             - name: MYSQL_ROOT_PASSWORD
-              value: password    # ⚠️ change this for production
+              value: root    # ⚠️ change this for production
             - name: MYSQL_DATABASE
               value: agrodbs
           volumeMounts:
